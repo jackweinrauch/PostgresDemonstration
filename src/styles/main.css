@@ -1,0 +1,117 @@
+.page-wrap {
+  font-family: 'Lato', sans-serif; }
+
+.listContainer {
+  height: 75vh;
+  display: flex;
+  overflow-y: scroll;
+  border: black; }
+
+header::after {
+  display: block;
+  position: fixed; }
+
+header {
+  height: 100vh;
+  background-image: url("../resources/16482825177_62f52b4345_k.jpg");
+  background-size: cover;
+  z-index: 2;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  position: relative; }
+
+.header-wrap {
+  position: relative; }
+
+h1 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: -10px;
+  z-index: 1;
+  font-size: 50px;
+  color: ghostwhite;
+  text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.7); }
+
+.head-link {
+  position: relative;
+  display: inline-block;
+  font-size: 25px;
+  text-decoration: overline;
+  color: ghostwhite;
+  margin: 20px auto 20px;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.7); }
+
+.head-link:hover {
+  position: relative;
+  display: block;
+  font-size: 27px;
+  color: ghostwhite;
+  text-decoration: none;
+  margin: 20px auto 20px; }
+
+header::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(31, 30, 30, 0.19); }
+
+.content {
+  display: block;
+  position: relative;
+  left: 60px;
+  padding: 15px;
+  margin: 0px;
+  background-color: whitesmoke; }
+
+p {
+  max-width: 600px;
+  padding: 20px;
+  left: 0;
+  font-size: 15px;
+  margin: 0px auto 0px;
+  display: block;
+  color: darkslategrey; }
+
+.footer {
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding-bottom: 2px;
+  align-content: space-between;
+  background: #ffffff; }
+
+.footer ul {
+  cursor: pointer;
+  list-style: none;
+  color: black;
+  -webkit-font-smoothing: antialiased; }
+  .footer ul :hover {
+    color: rgba(89, 89, 89, 0.9);
+    text-decoration: none; }
+
+.sidebar {
+  display: block;
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: -30px;
+  width: 120px;
+  padding: 10px;
+  background: #333;
+  z-index: 0; }
+
+.sidebar ul {
+  cursor: pointer;
+  list-style: none;
+  color: whitesmoke;
+  -webkit-font-smoothing: antialiased; }
+  .sidebar ul :hover {
+    color: rgba(189, 189, 189, 0.7);
+    text-decoration: none; }
