@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import "../styles/main.css"
 import GetStudents from './getStudents'
 import GetTeachers from './getTeachers'
+import NewStudent from './newStudent'
 
 export default class App extends Component {
 	render(){
@@ -20,10 +21,12 @@ export default class App extends Component {
 					 <div className="listContainer">
 					<GetTeachers/>
    				  </div>
-
+					<div className="listContainer">
+					<NewStudent/>
+					</div>
 				  </div>
 				  <div className="footer">
-					<h5>Some Ways to find me!  </h5>
+					<h5>Is this what you meant by front to end?  </h5>
 					<ul>
             		<li><a href="https://www.linkedin.com/in/jack-weinrauch-a35b79148/" target="#"> Linkedin</a></li>
             		<li><a href="https://github.com/jackweinrauch" target="#">Github</a></li>

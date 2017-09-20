@@ -13,9 +13,6 @@
   margin: 20px 0 0 0;
   text-align: center; }
 
-.listContainer li {
-  text-decoration: none; }
-
 header::after {
   display: block;
   position: fixed; }

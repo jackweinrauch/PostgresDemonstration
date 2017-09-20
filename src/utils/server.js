@@ -39,8 +39,25 @@ app.get('/students', (req,res) => {
         
     })
 })
+app.post('/students', (req,res) =>{
+   const {first_name, last_name, email, gender, classroom_id} = req.body
+   req.app.get('db').newStudent([first_name, last_name, email, gender, classroom_id])
+   .then(response => {res.status(200).send(console.log('it worked boys'))
+   })
+})
 
-  
+app.put('/students/:id', (req,res) =>{
+const {email} = req.body
+    req.app.get('db').updateEmail([email, req.params.id]).then(response => {
+        res.status(200).send(response)
+    })
+})
+
+app.delete('/students/:id', (req,res) => {
+    req.app.get('db').deleteStudent([req.params.id]).then(response =>{
+        res.status(200).send(response)
+    })
+})  
 
 
 
