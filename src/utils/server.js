@@ -4,7 +4,8 @@ const express = require('express'),
       bodyParser = require('body-parser'),
       passport = require('passport'),
       auth0strategy = require('passport-auth0'),
-      session = require('express-session');
+      session = require('express-session'),
+      path = require('path');
 
 const app = express();
 const port = 4200;

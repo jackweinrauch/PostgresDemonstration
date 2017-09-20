@@ -9,19 +9,21 @@ export default class App extends Component {
 				  <div className="page-wrap">
 				  <header> 
 					<h1> Hey Jeremy</h1>
-					<a href="/" className="head-link"> This is how dummy data for a school class looks </a>
+					<a href="/" className="head-link"> All of this Dummy Data came from my db! </a>
 				  </header>       
-				  <div id="hl-content" className="content">
+				  <div className="content">
+					<h4>Student Data</h4>
 				  <div className="listContainer">
 					<GetStudents/>
    				  </div>
+						 <h4>Teacher Data</h4>
 					 <div className="listContainer">
 					<GetTeachers/>
    				  </div>
 
 				  </div>
 				  <div className="footer">
-					<h4>Some Ways to find me!  </h4>
+					<h5>Some Ways to find me!  </h5>
 					<ul>
             		<li><a href="https://www.linkedin.com/in/jack-weinrauch-a35b79148/" target="#"> Linkedin</a></li>
             		<li><a href="https://github.com/jackweinrauch" target="#">Github</a></li>
@@ -29,11 +31,11 @@ export default class App extends Component {
 				  </div>
 				  <div className="sidebar">
 					<ul>
-					  <li>Home</li>
-					  <li>About</li>
+					  <li>Fun</li>
+					  <li>With</li>
 					  <li>Dummy</li>
 					  <li>Data</li>
-					  <li>is Fun</li>
+					  <li>Yay!</li>
 					</ul>
 				  </div>  
 				</div>

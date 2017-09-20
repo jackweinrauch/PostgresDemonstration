@@ -24,17 +24,17 @@ export default class GetTeachers extends Component {
     render(){
         let teachers = this.state.teachers.map((c, index)=> {
         return(
-            <div key={index}  className="content">
-                        <div className="listContainer">
+            <div key={index}>
+                       
                             <li> | ID: {c.id + " "}  
                                  | First Name: {c.first_name + " "} 
                                  | Last Name: {c.last_name + " "} 
                                  | Email: {c.email + " "} 
                                  | Gender: {c.gender + " "} 
-                                 | Classroom: {c.classroom_id + " "} 
+                                 | Classroom: {c.classroom + " "} 
                                  | Degree: {c.degree + " "} 
                             </li>
-                        </div>
+                        
              </div>
         )
     })
