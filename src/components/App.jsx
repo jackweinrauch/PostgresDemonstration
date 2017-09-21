@@ -3,13 +3,15 @@ import "../styles/main.css"
 import GetStudents from './getStudents'
 import GetTeachers from './getTeachers'
 import NewStudent from './newStudent'
+import GetClassroom from './getClassroom'
+
 
 export default class App extends Component {
 	render(){
 		return (
 				  <div className="page-wrap">
 				  <header> 
-					<h1> Hey Jeremy</h1>
+					<h1> Hey Brack!</h1>
 					<a href="/" className="head-link"> All of this Dummy Data came from my db! </a>
 				  </header>       
 				  <div className="content">
@@ -22,8 +24,13 @@ export default class App extends Component {
 					<GetTeachers/>
    				  </div>
 					<div className="listContainer">
+						<h4>Put in a new student</h4>
 					<NewStudent/>
 					</div>
+					<div>
+						<GetClassroom/>
+					</div>
+
 				  </div>
 				  <div className="footer">
 					<h5>Is this what you meant by front to end?  </h5>
@@ -34,11 +41,11 @@ export default class App extends Component {
 				  </div>
 				  <div className="sidebar">
 					<ul>
-					  <li>Fun</li>
-					  <li>With</li>
+					  <li>About</li>
+					  <li>Home</li>
 					  <li>Dummy</li>
 					  <li>Data</li>
-					  <li>Yay!</li>
+					  <li>Fun</li>
 					</ul>
 				  </div>  
 				</div>

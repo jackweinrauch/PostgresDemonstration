@@ -39,6 +39,20 @@ app.get('/students', (req,res) => {
         
     })
 })
+app.get('/classroom/:id', (req,res)=>{
+    app.get('db').getClassroom([req.params.id.toString()])
+    .then(response =>{
+        res.status(200).send(response)
+        console.log(response)
+    })
+})
+app.get('/classid', (req,res)=>{
+    app.get('db').getClassID()
+    .then(response =>{
+        res.status(200).send(response)
+        console.log(response)
+    })
+})
 app.post('/students', (req,res) =>{
    const {first_name, last_name, email, gender, classroom_id} = req.body
    req.app.get('db').newStudent([first_name, last_name, email, gender, classroom_id])

@@ -22,6 +22,16 @@ export default class GetStudents extends Component {
             })
         })
     }
+
+    deleteStudent(id){
+        axios.delete('/students/'+id).then(response => {
+            console.log(response)
+            this.setState({
+                students: response.data
+            })
+        })
+    }
+
     
 
     render(){
@@ -46,3 +56,8 @@ return (
 )}}
 
 
+/*            <form>
+            <input type="text" name="id" value={classroom_id} onChange={this.onChange} />
+            <button onClick={_ => this.deleteStudent(c.id)}>Delete</button>
+            </form>
+            */
